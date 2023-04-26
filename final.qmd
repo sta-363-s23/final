@@ -3,7 +3,7 @@ title: "Final Part 2"
 format: html
 ---
 
-For this part of the final I am providing you with some data and you need to fit a prediction model. I have some held out test data that I will evaluate your prediction model with. You will upload two things into Canvas for this part: (A) this .html file and (B) A final_mod.rds file that you will save that contains the final model that you fit (that I will run on my test data).
+For this part of the final I am providing you with some data and you need to fit a prediction model. I have some held out test data that I will evaluate your prediction model with. You will upload two things into Canvas for this part: (A) this .html file and (B) A final_mod.rds file that you will save (see below) that contains the final model that you fit (that I will run on my test data).
 
 
 
