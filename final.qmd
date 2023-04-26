@@ -1,0 +1,54 @@
+---
+title: "Final Part 2"
+format: html
+---
+
+For this part of the final you have some data and you need to fit a prediction model. I have some held out test data that I will evaluate your prediction model with. You will upload two things into Canvas for this part (1) this .html file and (2) The final_mod.rds file that you will save below that contains the final model that you  fit (that I will run on my test data).
+
+```{r}
+library(tidyverse)
+library(tidymodels)
+```
+
+## Read in the data
+
+Here we have a dataset with 12 predictors, `x1` through `x12`, and an outcome, `y`. Running the code below will read the data into your session.
+
+```{r}
+#| label: load-data
+load("data.rds")
+```
+
+## Build a prediction model
+
+Using any of the techniques we learned in class, build a prediction model predicting `y` from any of the remaining variables. Be sure to complete any necessary pre-processing.
+
+
+```{r}
+#| label: prediction-model
+
+
+```
+
+## Final model object
+
+When you have finished building your model, save the **final model object** as `final_mod`. This object should either be the output from using the `fit()` function on your finalized workflow *or* a model stack from an ensemble method. Be sure to save your final model to upload to canvas by running the save function as below.
+
+```{r}
+#| label: final-mod
+
+# Update the line below and save your final model object. Make sure that it "works"
+# by running the check (that is, make sure that it is an object that you can predict from)
+
+final_mod <- ----
+
+## check that final_mod works
+final_mod |>
+  predict(data) |>
+  bind_cols(data) |>
+  rmse(estimate = .pred, truth = y)
+
+## Save your final model to upload to canvas
+save(final_mod, "final_mod.rds")
+```
+
