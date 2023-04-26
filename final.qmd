@@ -51,6 +51,6 @@ final_mod |>
   rmse(estimate = .pred, truth = y)
 
 ## Save your final model to upload to canvas
-save(final_mod, "final_mod.rds")
+save(final_mod, file = "final_mod.rds")
 ```
 
